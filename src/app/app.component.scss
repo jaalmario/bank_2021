@@ -24,15 +24,22 @@ mat-sidenav-container{
                 width:100%;
                 .mat-list-item{
                     font-size: 120%;
-                    width:100%;
                     text-align: center;
                     color:white;
-                    padding-left:20px;
+                    ::ng-deep{
+                        .mat-list-item-content{
+                            padding-left:40px;
+                        }
+                    }
                 }
                 .secondary-list{
                     font-size: 110%;
                     height: 30px;
-                    padding-left:35px;
+                    ::ng-deep{
+                        .mat-list-item-content{
+                            padding-left:60px;
+                        }
+                    }
                 }
             }
         }
