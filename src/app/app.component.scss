@@ -32,15 +32,21 @@ mat-sidenav-container{
                         }
                     }
                 }
-                .secondary-list{
-                    font-size: 110%;
-                    height: 30px;
-                    ::ng-deep{
-                        .mat-list-item-content{
-                            padding-left:60px;
+                .secondary-list-nav{
+                    padding:0;
+                    overflow: hidden;
+                    height:50px;
+                    .secondary-list{
+                        font-size: 110%;
+                        height: 30px;
+                        ::ng-deep{
+                            .mat-list-item-content{
+                                padding-left:60px;
+                            }
                         }
                     }
                 }
+                
             }
         }
 
