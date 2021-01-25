@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BankWeb';
+  public isDropped = false;
+
+  dropMenu(){
+    this.isDropped = !this.isDropped;
+  }
 }

@@ -8,8 +8,8 @@
       <mat-nav-list>
         <a mat-list-item href='#'>Dashboard</a>
         <a mat-list-item href='#'>Companies</a>
-        <a mat-list-item href='#'>Administrative</a>
-        <mat-nav-list class='secondary-list-nav'>
+        <a mat-list-item (click)="dropMenu()" href='#'>Administrative</a>
+        <mat-nav-list class='secondary-list-nav' [style.height]="isDropped ? '60px' : '0px' ">
           <a mat-list-item href='#' class='secondary-list'>Users</a>
           <a mat-list-item href='#' class='secondary-list'>User Access</a>
         </mat-nav-list>
